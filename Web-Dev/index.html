@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS CheatSheet</title>
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>HTML/CSS CheatSheet</h1>
+        <h2>Table of Contents</h2>
+        <nav>
+            <ul>
+                <li><a href="#tables">HTML Tables</a></li>
+                <li><a href="#semantic">Semantic HTML</a></li>
+                <li><a href="#cssvisual">CSS Visual Rules</a></li>
+                <li><a href="#selectors">CSS Selectors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="tables">HTML Tables</h2>
+        <h3>Table Tags</h3>
+          <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">< table ></span>
+                    </td>
+                    <td>Table</td>
+                    <td>Used to create a table</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< tr ></span>
+                    </td>
+                    <td>Table Rows</td>
+                    <td>Adds rows to the table</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< td ></span>
+                    </td>
+                    <td>Table Data</td>
+                    <td>Creates cells and displays data</td>
+                    <td>colspan & rowspan: how many columns/rows will the data span</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< th ></span>
+                    </td>
+                    <td>Table Headings</td>
+                    <td>Gives the table a relevant title, placed within table row</td>
+                    <td>colspan & rowspan: how many columns/rows will the data span</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< tbody ></span>
+                    </td>
+                    <td>Table Body</td>
+                    <td>Sections data, contains all of table's data</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< thead ></span>
+                    </td>
+                    <td>Table Head</td>
+                    <td>Sections off table's headings</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< tfoot ></span>
+                    </td>
+                    <td>Table Footer</td>
+                    <td>Sections off bottom part of the table. Often used for data results</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+          </table>
+
+        <h2 id="semantic">Semantic HTML</h2>
+        <h3>HTML Tags</h3>
+          <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">< header ></span> 
+                    </td>
+                    <td>Header</td>
+                    <td>Used for h1-h6 headings and nav links</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< nav ></span> 
+                    </td>
+                    <td>Navigation</td>
+                    <td>Defines a block of navigation links such as table of contents</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< main ></span> 
+                    </td>
+                    <td>Main</td>
+                    <td>Encapsulates dominant content within a page</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< footer ></span> 
+                    </td>
+                    <td>Footer</td>
+                    <td>Bottom of page, contains contact info, copyright info, etc.</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< section ></span> 
+                    </td>
+                    <td>Section</td>
+                    <td>Defines elements like chapters, headings, etc.</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< article ></span> 
+                    </td>
+                    <td>Article</td>
+                    <td>Content that makes sense on its own like blogs, articles, etc.</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< aside ></span> 
+                    </td>
+                    <td>Aside</td>
+                    <td>Marks additional info that can enhance another element</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< figure ></span> 
+                    </td>
+                    <td>Figure</td>
+                    <td>Encapsulates media that is referenced in main flow of the doc</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< figcaption ></span> 
+                    </td>
+                    <td>Figcaption</td>
+                    <td>Caption for the media from < figure ></td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< audio ></span> 
+                    </td>
+                    <td>Audio</td>
+                    <td>Embed audio content into a doc</td>
+                    <td>src, controls</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< video ></span> 
+                    </td>
+                    <td>Video</td>
+                    <td>Adds videos to the website</td>
+                    <td>src, controls, autoplay, loop</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">< embed ></span> 
+                    </td>
+                    <td>Embed</td>
+                    <td>Embeds any media content like videos, audio, gifs</td>
+                    <td>src</td>
+                </tr>
+            </tbody>
+          </table>
+
+        <h2 id="cssvisual">CSS Visual Rules</h2>
+        <h3>Visual Rules</h3>
+          <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="css">font-family</span> 
+                    </td>
+                    <td>Font Family</td>
+                    <td>Changes the font of text</td>
+                    <td><a href="https://www.cssfontstack.com/">Web Safe Fonts</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">font-size</span> 
+                    </td>
+                    <td>Font Size</td>
+                    <td>Changes the size of font</td>
+                    <td>Measured in px and other units</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">font-weight</span> 
+                    </td>
+                    <td>Font Weight</td>
+                    <td>How bold or thin the font is</td>
+                    <td>Bold, measured in px and other units</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">text-align</span> 
+                    </td>
+                    <td>Text Align</td>
+                    <td>Aligns text of element</td>
+                    <td>left, right, center, justify</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">color</span> 
+                    </td>
+                    <td>Foregroung Color</td>
+                    <td>Color that the element appears in</td>
+                    <td>Named, RGB, HSL</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">background-color</span> 
+                    </td>
+                    <td>Background Color</td>
+                    <td>Color of element's background</td>
+                    <td>Named, RGB, HSL</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">opacity</span> 
+                    </td>
+                    <td>Opacity</td>
+                    <td>How transparent an element is</td>
+                    <td>Measured from 0 (invisible) to 1(fully visible)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">background-image</span> 
+                    </td>
+                    <td>Background Image</td>
+                    <td>Sets element's background to display an image</td>
+                    <td>Need relative file path to image</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">!important</span> 
+                    </td>
+                    <td>Important</td>
+                    <td>Overrides any style no matter how specific</td>
+                </tr>
+            </tbody>
+          </table>
+
+        <h2 id="selectors">CSS Selectors</h2>
+        <h3>Main CSS Selectors</h3> 
+          <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="css">"type"</span> 
+                    </td>
+                    <td>Type</td>
+                    <td>Matches the type of element in HTML doc</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">*</span> 
+                    </td>
+                    <td>Universal</td>
+                    <td>Selcts all elements of any type</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">.class</span> 
+                    </td>
+                    <td>Class Selector</td>
+                    <td>Selects classes from HTML</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">#id</span> 
+                    </td>
+                    <td>ID Selector</td>
+                    <td>Selects an element's ID with CSS</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="css">:</span> 
+                    </td>
+                    <td>Psuedo-Class</td>
+                    <td>Have factors such as user interaction, site nav, and position</td>
+                </tr>
+            </tbody>
+          </table>
+    </main>
+
+    <footer>
+        <span><a href="mailto:tcarlon94@gmail.com">Contact</a></span>
+        <span><a href="https://github.com/tcarlon94">Github</a></span>
+        <span><a href="https://docs.google.com/document/d/1CqBzjdBLsiiqb1DLL9M0L-1GJiBmPWbAYRh8Ql2IUaA/edit?usp=sharing">Full Notes</a></span>
+    </footer>
+</body>
+</html>

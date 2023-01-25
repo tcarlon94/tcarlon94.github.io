@@ -1,0 +1,107 @@
+* {
+  background-color: lightsteelblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: maroon;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  background-color: steelblue;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: maroon;
+}
+
+nav ul {
+  text-align: center;
+  font-size: 20px;
+  list-style-type: none;
+  display: list-item;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(216, 7, 7);
+}
+
+table {
+  table-layout: auto;
+  width: 1300px;
+  margin: 0 auto;
+  border: 2px solid steelblue;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+table, tr, td {
+  border: 2px solid steelblue;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+  display: table-cell;
+}
+
+tr {
+  border: 1px;
+  border-color: inherit;
+  display: table-row;
+}
+
+a {
+ color: blue; 
+}
+
+a:hover {
+  color: rgb(4, 4, 182);
+}
+
+.code {
+  font-family: monospace;
+  background-color: whitesmoke;
+}
+
+.css {
+  font-style: italic;
+}
+
+footer {
+  margin: 30px;
+  background-color: steelblue;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: steelblue;
+}
+
+footer a:hover {
+  color: lightgray;
+}
+
+footer span {
+  margin: 100px;
+}
